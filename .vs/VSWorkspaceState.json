@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\assets",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\menu",
+    "\\src\\components\\portfolio",
+    "\\src\\components\\portfolioList",
+    "\\src\\components\\topbar",
+    "\\src\\components\\works"
+  ],
+  "SelectedNode": "\\src\\data.js",
+  "PreviewInSolutionExplorer": false
+}
