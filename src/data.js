@@ -6,7 +6,7 @@ export const featuredPortfolio = [
         title: "React Portfolio",
         img:
             "/assets/react-portfolio.png",
-        url:"https://www.google.com/"
+        url:"https://github.com/Mhm-Rs/portfolio"
     },
     {
         id: 2,
@@ -56,7 +56,7 @@ export const webPortfolio = [
         id: 2,
         title: "React Portfolio",
         img:"/assets/react-portfolio.png",
-        url:"https://www.google.com/"
+        url:"https://github.com/Mhm-Rs/portfolio"
 
     }, 
     {
@@ -77,7 +77,7 @@ export const webPortfolio = [
         id: 5,
         title: "Timesheet Calculator App",
         img:"/assets/timesheet.png",
-        url:"https://www.google.com/"
+        url:"https://github.com/Mhm-Rs/timesheetcalcapp"
     },
 ];
 
@@ -133,7 +133,7 @@ export const worksData = [
             "A regularly-updated, dynamic portfolio made to show my projects. Made with React.",
         img:
             "assets/portfolio.png",
-         github:'https://www.bonjour404.fr/'
+         github:'https://github.com/Mhm-Rs/portfolio'
     },
     {
         id: "5",
@@ -143,16 +143,26 @@ export const worksData = [
             "An app which shows the number of hours you've worked thanks to some data. Made with HTML,CSS,JS.",
         img:
             "assets/timesheet.png",
-        github:"https://www.bonjour404.fr/"
+        github:"https://github.com/Mhm-Rs/timesheetcalcapp"
+    },
+    {
+        id: "6",
+        icon: "./assets/gamepad.png",
+        title: "Memory Game",
+        desc:
+            "A game in which the goal is to find all pairs of pics in a limited number of attempts. Made with C and SDL2.",
+        img:
+            "assets/memory.png",
+        github:"https://github.com/Mhm-Rs/memory-game"
     },
 ];
 
-export const consolePortfolio =  [
+export const otherappsPortfolio =  [
     {
         id:"1",
         icon:'assets/gamepad.png',
         title:"C Memory Game",
-        img:"https://google.png",
-        github:"https://www.bonjour404.fr/"
+        img:"assets/memory.png",
+        url:"https://github.com/Mhm-Rs/memory-game"
     }
 ];

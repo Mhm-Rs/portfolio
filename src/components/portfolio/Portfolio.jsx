@@ -8,7 +8,7 @@ import {
     featuredPortfolio,
     webPortfolio,
     designPortfolio,
-    consolePortfolio
+    otherappsPortfolio,
 } from '../../data'
 import { useEffect } from "react"
 
@@ -31,8 +31,8 @@ export default function Portfolio() {
             title: "Design"
         },
         {
-            id:"console",
-            title:"Console"
+            id:"other apps",
+            title:"Other Apps"
         }
     ]
 
@@ -48,8 +48,8 @@ export default function Portfolio() {
             case "design":
                 setData(designPortfolio)
                 break;
-            case "console":
-                setData(consolePortfolio)
+            case "other apps":
+                setData(otherappsPortfolio)
                 break;
             default:
                 setData(featuredPortfolio);
