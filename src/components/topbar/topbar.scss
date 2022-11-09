@@ -78,12 +78,14 @@
         }
     }
 
+    //si menuOpen==true ie si on a cliqué sur le hamburger
     &.active {
         background-color: $mainColor;
         color: linen;
 
         .hamburger {
 
+            //transformation de hamburger à croix
             span {
                 &:first-child {
                     background-color: linen;

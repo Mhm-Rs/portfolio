@@ -1,3 +1,5 @@
+//1ère page (page d'accueil)
+
 import { useEffect,useRef } from "react"
 import "./intro.scss"
 import {init } from 'ityped'
@@ -6,13 +8,14 @@ export default function Intro() {
 
 
     const textRef = useRef();
-
+    
     useEffect(() => {
+        //faire apparaître le texte
         init(textRef.current, {
             showCursor: true,
             backDelay: 1500,
             backSpeed:60,
-            strings:["Front-End Developer","Designer","Programmer"]
+            strings:["Front-End Developer","Programmer","Designer"]
         })
     },[])
 
@@ -21,7 +24,7 @@ export default function Intro() {
         <div className="intro" id='intro'>
             <div className='left'>
                 <div className='imgContainer'>
-                    <img src='assets/Mohaman.jpg' alt='me' />
+                    <img src='assets/moha.jpg' alt='me' />
                 </div>
             </div>
             <div className='right'>

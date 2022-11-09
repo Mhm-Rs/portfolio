@@ -1,3 +1,5 @@
+//tous les éléments du portfolio (2ème page)
+
 import "./portfolio.scss"
 import "../portfolioList/PortfolioList.jsx"
 import PortfolioList from "../portfolioList/PortfolioList.jsx"
@@ -6,42 +8,36 @@ import {
     featuredPortfolio,
     webPortfolio,
     designPortfolio,
-    //mobilePortfolio,
-    //contentPortfolio
+    consolePortfolio
 } from '../../data'
 import { useEffect } from "react"
 
 export default function Portfolio() {
 
-    const [selected,setSelected] = useState("featured")
+    const [selected, setSelected] = useState("featured")
 
     const [data, setData] = useState([])
     const list = [
         {
             id: "featured",
-            title:"Featured"
+            title: "Featured"
         },
         {
             id: 'web',
-            title:"Web App"
+            title: "Web App"
         },
         {
             id: 'design',
             title: "Design"
         },
-        /*
         {
-            id: 'mobile',
-            title: "Mobile App"
-        },
-       
-        {
-            id: 'content',
-            title: "Content"
-        }*/
+            id:"console",
+            title:"Console"
+        }
     ]
 
     useEffect(() => {
+        //choisir le tableau à parcourir en fonction de l'onglet du portfolio
         switch (selected) {
             case "featured":
                 setData(featuredPortfolio)
@@ -52,12 +48,9 @@ export default function Portfolio() {
             case "design":
                 setData(designPortfolio)
                 break;
-           /* case "mobile":
-                setData(mobilePortfolio)
+            case "console":
+                setData(consolePortfolio)
                 break;
-            case "content":
-                setData(contentPortfolio)
-                break;*/
             default:
                 setData(featuredPortfolio);
         }
@@ -83,11 +76,18 @@ export default function Portfolio() {
                             src={element.img}
                             alt='bank'
                         />
-                        <h3>{element.title}</h3>
+                        <h3>
+                            <a 
+                            href={element.url}
+                            target="_blank"
+                            rel="noreferrer">
+                                {element.title}
+                            </a>
+                        </h3>
 
                     </div>
                 ))}
-                 
+
             </div>
         </div>
 

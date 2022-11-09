@@ -7,7 +7,7 @@
     justify-content: center;
     position: relative;
 
-    .arrow {
+    .arrow { //les flèches sont au centre de la zone works et n'apparaissent pas sur mobile
         height: 50px;
         position: absolute;
         cursor: pointer;
@@ -40,7 +40,7 @@
         }
 
         .container {
-            width: 100vw;
+            width: 100vw; //chaque slide est à la suite de l'autre
             display: flex;
             align-items: center;
             justify-content: center;
@@ -138,10 +138,14 @@
 
                     img {
                         width: 400px;
-                        transform: rotate(-10deg);
+                        transform: rotate(-10deg); //ne marche plus très bien à cause du <a> 😓
                     }
                 }
             }
         }
     }
+}
+
+a{
+    overflow: hidden; //pour ne pas avoir de barres de défilement sur les images
 }

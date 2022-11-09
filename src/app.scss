@@ -8,14 +8,14 @@
         position: relative;
         top: 70px;
         scroll-behavior:smooth;
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory; //faire que l'on défile de section en section 
         > * {
             width: 100vw;
             height: calc(100vh - 70px);
-            scroll-snap-align: start;
+            scroll-snap-align: start; //s'accrocher à chaque fin desection
         }
     }
 }
 .sections::-webkit-scrollbar {
-    display: none; //faire dispara�tre la scrollbar
+    display: none; //faire dispara�tre la scrollbar
 }

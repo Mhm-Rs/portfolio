@@ -1,7 +1,7 @@
 $mainColor: #15023a;
 $width:878px;
 
-@mixin mobile {
+@mixin mobile { //gérer le responsive (si taille écran < 878px)
     @media (max-width: #{$width}){
         @content
     }

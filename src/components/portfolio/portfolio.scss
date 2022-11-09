@@ -39,7 +39,8 @@
             width: 100%;
         }
 
-        .item {
+        
+        .item{
             width: 220px;
             height: 150px;
             border-radius: 20px;
@@ -52,17 +53,25 @@
             position: relative;
             transition: all .5s ease;
             cursor: pointer;
+            overflow: hidden;
+
 
             @include mobile {
                 width:130px;
                 height:100px;
             }
 
-            h3 {
+            h3{
                 position: absolute;
                 font-size: 20px;
                 text-align:center;
+
+                a{
+                    text-decoration: none;
+                    color:linen;
+                }
             }
+
 
             img {
                 width: 100%;
@@ -81,5 +90,6 @@
                 }
             }
         }
+        
     }
 }

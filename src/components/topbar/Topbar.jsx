@@ -1,3 +1,4 @@
+//barre supérieure 
 import './topbar.scss'
 export default function Topbar({menuOpen,setMenuOpen}) {
     return (
@@ -8,7 +9,7 @@ export default function Topbar({menuOpen,setMenuOpen}) {
                     <a href="#intro" className='logo'>Mhm_Rs</a>
                     <div className='itemContainer'>
                         <i className="fa-solid fa-user icon"></i>
-                        <a href='tel:+237690354942'><span>+237690354942</span></a>
+                        <a href='tel:+237690354942'><span>+33 07 58 94 97 07</span></a>
                     </div>
                     <div className='itemContainer'>
                        <i className="fa-solid fa-envelope icon"></i>

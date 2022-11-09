@@ -1,62 +1,25 @@
+//projets dans la 3e page
+
 import { useState } from 'react';
 import './works.scss'
-
+import { worksData } from '../../data';
 export default function Works() {
+    //connaitre slide actuelle
+    const [currentSlide, setCurrentSlide] = useState(0)
 
-    const [currentSlide,setCurrentSlide] = useState(0)
-    const data = [
-        {
-            id: "1",
-            icon:'assets/gamepad.png',
-            title: "Who Wants To Be A Millionnaire App",
-            desc:
-                "A quizz app based on the \"Who Wants To Be A Millionnaire\" TV game. Made with React. ",
-            img:
-                "assets/quizz.png",
-        },
-        {
-            id: "2",
-            icon: "./assets/gamepad.png",
-            title: "Tenzies Dice Game",
-            desc:
-                "A dice game. The goal is to roll all dice until all values are the same. Made with React.",
-            img:
-                "assets/tenzies.png",
-        },
-        {
-            id: "3",
-            icon: "./assets/globe.png",
-            title: "React Portfolio",
-            desc:
-                "A regularly-updated, dynamic portfolio made to show my projects. Made with React.",
-            img:
-                "assets/portfolio.png",
-        },
-        {
-            id: "4",
-            icon: "./assets/travel.png",
-            title: "Travel Journal",
-            desc:
-                "A dynamic website which shows travel destinations and their descriptions. Made with React.",
-            img:
-                "assets/traveljournal.png",
-        },
-    ];
-
-
+    //incrémenter ou décrémenter currentslide selon si on a appuyé sur flèche gauche ou droite
     const handleClick = (way) => {
-        way === 'left' ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : data.length-1) :
-            setCurrentSlide(currentSlide < data.length-1 ? currentSlide+1 : 0)
+        way === 'left' ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : worksData.length - 1) :
+            setCurrentSlide(currentSlide < worksData.length - 1 ? currentSlide + 1 : 0)
     }
     return (
 
         <div className="works" id='works'>
             <div
                 className='slider'
-                style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-               
+                style={{ transform: `translateX(-${currentSlide * 100}vw)` }} //on affiche une différente slide en fonction de currentslide
             >
-                {data.map(item => (
+                {worksData.map(item => (
                     <div className="container">
                         <div className='item'>
                             <div className="left">
@@ -65,7 +28,6 @@ export default function Works() {
                                         <img
                                             src={item.icon}
                                             alt='proj'
-                                            
                                         />
                                     </div>
                                     <h2>{item.title}</h2>
@@ -74,11 +36,13 @@ export default function Works() {
                                 </div>
                             </div>
                             <div className='right'>
-                                <img
-                                    src={item.img}
-                                    alt='title'
-                                    
-                                />
+                                <a href={item.github}>
+                                    <img
+                                        src={item.img}
+                                        alt='title'
+
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>))}
@@ -87,12 +51,12 @@ export default function Works() {
                 src='assets/arrow.png'
                 className="arrow left"
                 alt="arrleft"
-                onClick={()=>handleClick("left")}            />
+                onClick={() => handleClick("left")} />
             <img
                 src='assets/arrow.png'
                 className="arrow right"
                 alt="arright"
-                onClick={() => handleClick()} 
+                onClick={() => handleClick("right")}
             />
         </div>
     )

@@ -1,39 +1,46 @@
+//tous les tableaux utilisés
+
 export const featuredPortfolio = [
     {
         id: 1,
         title: "React Portfolio",
         img:
             "/assets/react-portfolio.png",
+        url:"https://www.google.com/"
     },
     {
         id: 2,
         title: "Who Wants To Be A Millionnaire",
         img:
             "/assets/millionnaire.png",
+        url:"https://github.com/Mhm-Rs/millionnaire-app"
     },
     {
         id: 3,
         title: "Tenzies Dice Game",
         img:
             "/assets/tenzies.png",
+        url:"https://github.com/Mhm-Rs/tenzies"
     },
     {
         id: 4,
-        title: "Prepa Startup - Final Poster",
-        img:
-            "/assets/ps2.jpg",
+        title: "E-Commerce Website",
+        img:"/assets/ecommerce.png",
+        url:"https://github.com/Mhm-Rs/react-ecommerce-website"
     },
     {
         id: 5,
-        title: "Prepa Startup - Launch Poster",
+        title: "Prepa Startup - Finals Poster",
         img:
-            "/assets/ps1.png",
+            "/assets/ps2.jpg",
+        url:"https://www.google.com/"
     },
     {
         id: 6,
-        title: "Travel Journal",
+        title: "Prepa Startup - Launch Poster",
         img:
-            "/assets/traveljournal.png",
+            "/assets/ps1.png",
+        url:"https://www.google.com/"
     },
 ];
 
@@ -42,72 +49,37 @@ export const webPortfolio = [
         id: 1,
         title: "Who Wants To Be A Millionnaire",
         img:"/assets/millionnaire.png",
+        url:"https://github.com/Mhm-Rs/millionnaire-app"
+        
     },
     {
         id: 2,
         title: "React Portfolio",
         img:"/assets/react-portfolio.png",
+        url:"https://www.google.com/"
+
     }, 
     {
         id: 3,
+        title: "E-Commerce Website",
+        img:"/assets/ecommerce.png",
+        url:"https://github.com/Mhm-Rs/react-ecommerce-website"
+
+    },
+    {
+        id: 4,
         title: "Tenzies Dice Game",
         img:"/assets/tenzies.png",
-    },
-    {
-        id: 4,
-        title: "Travel Journal",
-        img:"/assets/traveljournal.png",
-    },
-   /* {
-        id: 5,
-        title: "Web Design",
-        img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
-    },
-    {
-        id: 6,
-        title: "Web Banking App",
-        img: "https://cdn.dribbble.com/users/6384483/screenshots/15468426/media/ce9479fa1f8dba3a4a49840d76e55e31.png?compress=1&resize=1200x900",
-    },*/
-];
+        url:"https://github.com/Mhm-Rs/tenzies"
 
-/*export const mobilePortfolio = [
-    {
-        id: 1,
-        title: "Mobile Social Media App",
-        img:
-            "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
-    },
-    {
-        id: 2,
-        title: "Mobile Rampa UI Design",
-        img:
-            "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
-    },
-    {
-        id: 3,
-        title: "Mobile E-commerce Design",
-        img:
-            "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
-    },
-    {
-        id: 4,
-        title: "Mobile Relax App",
-        img:
-            "https://cdn.dribbble.com/users/2083704/screenshots/15468619/media/cd958306c7a772449e1ac23bd65ce506.png?compress=1&resize=1200x900",
     },
     {
         id: 5,
-        title: "Mobile Hero Design",
-        img:
-            "https://cdn.dribbble.com/users/26642/screenshots/15462545/media/1a202ef5c8338b6f78634e6edc1ba350.png?compress=1&resize=1200x900",
+        title: "Timesheet Calculator App",
+        img:"/assets/timesheet.png",
+        url:"https://www.google.com/"
     },
-    {
-        id: 6,
-        title: "Mobile Banking App",
-        img:
-            "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
-    },
-];*/
+];
 
 export const designPortfolio = [
     {
@@ -120,67 +92,67 @@ export const designPortfolio = [
         title: "Prepa Startup - Launch Poster",
         img:"/assets/ps1.png",
     },
-   /* {
-        id: 3,
-        title: "Design E-commerce Web Design",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-        id: 4,
-        title: "Design Relax Mobile App",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-        id: 5,
-        title: "Design Keser Web Design",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-        id: 6,
-        title: "Design Banking App",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },*/
 ];
 
-/*export const contentPortfolio = [
+export const worksData = [
     {
-        id: 1,
-        title: "Content Social Media App",
+        id: "1",
+        icon: 'assets/gamepad.png',
+        title: "Who Wants To Be A Millionnaire App",
+        desc:
+            "A quizz app based on the \"Who Wants To Be A Millionnaire\" TV game. Made with React. ",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "assets/quizz.png",
+        github: "https://github.com/Mhm-Rs/millionnaire-app"
     },
     {
-        id: 2,
-        title: "Content Rampa UI Design",
+        id: "2",
+        icon: "./assets/gamepad.png",
+        title: "Tenzies Dice Game",
+        desc:
+            "A dice game. The goal is to roll all dice until all values are the same. Made with React.",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "assets/tenzies.png",
+        github:"https://github.com/Mhm-Rs/tenzies"
     },
     {
-        id: 3,
-        title: "Content E-commerce Web Design",
+        id: "3",
+        icon: "./assets/mobile.png",
+        title: "React E-Commerce Website",
+        desc:
+            "A responsive, server-based and fully fonctionnal e-commerce web app. Made with React.",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "assets/ecommerce.png",
+         github:"https://github.com/Mhm-Rs/react-ecommerce-website"
     },
     {
-        id: 4,
-        title: "Content Relax Mobile App",
+        id: "4",
+        icon: "./assets/globe.png",
+        title: "React Portfolio",
+        desc:
+            "A regularly-updated, dynamic portfolio made to show my projects. Made with React.",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "assets/portfolio.png",
+         github:'https://www.bonjour404.fr/'
     },
     {
-        id: 5,
-        title: "Content Keser Web Design",
+        id: "5",
+        icon: "./assets/writing.png",
+        title: "Timesheet Calculator App",
+        desc:
+            "An app which shows the number of hours you've worked thanks to some data. Made with HTML,CSS,JS.",
         img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+            "assets/timesheet.png",
+        github:"https://www.bonjour404.fr/"
     },
+];
+
+export const consolePortfolio =  [
     {
-        id: 6,
-        title: "Content Banking App",
-        img:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-];*/
+        id:"1",
+        icon:'assets/gamepad.png',
+        title:"C Memory Game",
+        img:"https://google.png",
+        github:"https://www.bonjour404.fr/"
+    }
+];
